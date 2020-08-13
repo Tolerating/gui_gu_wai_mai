@@ -4,7 +4,10 @@ import router from './router'
 import store from './store'
 
 Vue.config.productionTip = false
-
+if(process.env.NODE_ENV !== 'production'){
+  console.log("开发环境");
+  require('./mock');
+}
 new Vue({
   router,
   store,

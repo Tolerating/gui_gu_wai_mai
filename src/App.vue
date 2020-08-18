@@ -12,7 +12,7 @@ export default {
     return{}
   },
   components:{
-    FooterGuide
+    FooterGuide 
   },
   mounted(){
     // this.$store.dispatch('getAddress');

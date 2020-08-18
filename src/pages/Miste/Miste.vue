@@ -3,7 +3,7 @@
     <!--首页头部-->
     <HeaderTop :title="address.name">
       <template v-slot:left>
-        <router-link class="header_search">
+        <router-link class="header_search" to="/search">
           <i class="iconfont icon-sousuo"></i>
         </router-link>
       </template>

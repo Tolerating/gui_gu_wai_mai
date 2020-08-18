@@ -160,3 +160,12 @@ Mock.mock(/[\w]+\/userinfo$/i, "get", function(option) {
     },
   };
 });
+
+/* 退出登录 */
+Mock.mock(/[\w]+\/logout$/i, "get", function(option) {
+  console.warn("访问的接口：退出登录", option);
+  return {
+    code: 0
+  };
+});
+

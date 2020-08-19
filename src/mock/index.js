@@ -170,6 +170,7 @@ Mock.mock(/[\w]+\/logout$/i, "get", function(option) {
   };
 });
 
+<<<<<<< HEAD
 /* 商家信息 */
 Mock.mock(/[\w]+\/goods$/i, "get", function(option) {
   console.warn("访问的接口：商家信息", option);
@@ -198,3 +199,5 @@ Mock.mock(/[\w]+\/ratings$/i, "get", function(option) {
 });
 
 
+=======
+>>>>>>> adcda38a240dd8655c97ee5f336b3c6997ab795d

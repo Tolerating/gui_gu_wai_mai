@@ -29,7 +29,6 @@ export const reqSmsLogin = (phone,code) => ajax(`${BASE_URL}/login_sms`,{phone,c
 
 /* 根据会话获取用户信息 */
 export const reqUserInfo = () => ajax(`${BASE_URL}/userinfo`);
-<<<<<<< HEAD
 
 /* 用户登出 */
 export const reqLogout = () => ajax(`${BASE_URL}/logout`);
@@ -43,8 +42,3 @@ export const reqShopRatings = () => ajax(`${BASE_URL}/shop_ratings`);
 /* 获取商品数组 */
 export const reqShopGoods = () => ajax(`${BASE_URL}/shop_goods`);
 
-=======
-
-/* 用户登出 */
-export const reqLogout = () => ajax(`${BASE_URL}/logout`);
->>>>>>> adcda38a240dd8655c97ee5f336b3c6997ab795d

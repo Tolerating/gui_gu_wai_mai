@@ -6,10 +6,7 @@ export default{
     categorys:[],  //食品分类数组
     shops:[], //商家数组
     userInfo:{},  //用户信息
-<<<<<<< HEAD
     goods:[],     //商品列表
     ratings:[],   //商家评论列表
     info:{},     //商家信息
-=======
->>>>>>> adcda38a240dd8655c97ee5f336b3c6997ab795d
 }

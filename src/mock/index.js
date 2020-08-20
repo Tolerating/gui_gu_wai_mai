@@ -40,7 +40,7 @@ Mock.mock(/[\w]+\/index_category$/i, "get", function(option) {
 });
 
 /* 根据经纬度获取商铺列表 */
-Mock.mock(/[\w]+\/shop/i, "get", function(option) {
+Mock.mock(/[\w]+\/shop\?/i, "get", function(option) {
   console.warn("访问的接口：根据经纬度获取商铺列表", option);
   return Mock.mock({
     code: 0,
@@ -171,7 +171,7 @@ Mock.mock(/[\w]+\/logout$/i, "get", function(option) {
 });
 
 /* 商家信息 */
-Mock.mock(/[\w]+\/goods$/i, "get", function(option) {
+Mock.mock(/[\w]+\/shop_goods$/i, "get", function(option) {
   console.warn("访问的接口：商家信息", option);
   return {
     code: 0,
@@ -180,7 +180,7 @@ Mock.mock(/[\w]+\/goods$/i, "get", function(option) {
 });
 
 /* 商品信息 */
-Mock.mock(/[\w]+\/info$/i, "get", function(option) {
+Mock.mock(/[\w]+\/shop_info$/i, "get", function(option) {
   console.warn("访问的接口：商品信息", option);
   return {
     code: 0,
@@ -189,7 +189,7 @@ Mock.mock(/[\w]+\/info$/i, "get", function(option) {
 });
 
 /* 评论 */
-Mock.mock(/[\w]+\/ratings$/i, "get", function(option) {
+Mock.mock(/[\w]+\/shop_ratings$/i, "get", function(option) {
   console.warn("访问的接口：评论", option);
   return {
     code: 0,

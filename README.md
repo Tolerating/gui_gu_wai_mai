@@ -1,8 +1,4 @@
-<<<<<<< HEAD
-> 哔哩哔哩视频看到https://www.bilibili.com/video/BV1Uz411i7y7?p=49
-=======
-> 哔哩哔哩视频看到https://www.bilibili.com/video/BV1Uz411i7y7?p=45
->>>>>>> adcda38a240dd8655c97ee5f336b3c6997ab795d
+> 哔哩哔哩视频看到https://www.bilibili.com/video/BV1Uz411i7y7?p=52
 
 ## Mint-ui按需引入
 ```

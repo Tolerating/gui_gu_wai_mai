@@ -8,7 +8,10 @@ import {
   RECEIVE_GOODS,
   RECEIVE_INFO,
   RECEIVE_RATINGS,
+  INCREMENT_FOOD_COUNT,
+  DECREMENT_FOOD_COUNT
 } from "./mutation-types";
+import Vue from 'vue'
 export default {
   [RECEIVE_ADDRESS](state, { address }) {
     state.address = address;
@@ -35,5 +38,18 @@ export default {
 
   [RECEIVE_GOODS](state, { goods }) {
     state.goods = goods;
+  },
+  [INCREMENT_FOOD_COUNT](state, { food }) {
+    if (!food.count) { //第一次增加
+      // food.count = 1;
+      Vue.set(food,'count',1);
+    }else{
+      food.count++;
+    }
+  },
+  [DECREMENT_FOOD_COUNT](state, { food }) {
+    if (food.count) {   //只有有值才去减少
+      food.count--;
+    }
   },
 };

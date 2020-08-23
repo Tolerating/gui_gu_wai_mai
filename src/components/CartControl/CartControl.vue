@@ -4,11 +4,11 @@
       <div
         class="iconfont icon-remove_circle_outline"
         v-if="food.count"
-        @click="updateFoodCount(true)"
+        @click.stop="updateFoodCount(false)"
       ></div>
     </transition>
     <div class="cart-count" v-if="food.count">{{ food.count }}</div>
-    <div class="iconfont icon-add_circle" @click="updateFoodCount(false)"></div>
+    <div class="iconfont icon-add_circle" @click.stop="updateFoodCount(true)"></div>
   </div>
 </template>
 
@@ -33,7 +33,7 @@ export default {
   .cart-decrease {
     display: inline-block;
     padding: 6px;
-    line-height: 24px;
+    line-height: 24px; 
     font-size: 24px;
     color: rgb(0, 160, 220);
   }

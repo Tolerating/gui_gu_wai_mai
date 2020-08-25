@@ -10,9 +10,10 @@ import {
   RECEIVE_RATINGS,
   INCREMENT_FOOD_COUNT,
   DECREMENT_FOOD_COUNT,
-  CLEAR_CART
+  CLEAR_CART,
+  RECEIVE_SEARCH_SHOPS,
 } from "./mutation-types";
-import Vue from 'vue'
+import Vue from "vue";
 export default {
   [RECEIVE_ADDRESS](state, { address }) {
     state.address = address;
@@ -41,28 +42,33 @@ export default {
     state.goods = goods;
   },
   [INCREMENT_FOOD_COUNT](state, { food }) {
-    if (!food.count) { //第一次增加
+    if (!food.count) {
+      //第一次增加
       // food.count = 1;
-      Vue.set(food,'count',1);
+      Vue.set(food, "count", 1);
       state.cartFoods.push(food);
-    }else{
+    } else {
       food.count++;
     }
   },
   [DECREMENT_FOOD_COUNT](state, { food }) {
-    if (food.count) {   //只有有值才去减少
+    if (food.count) {
+      //只有有值才去减少
       food.count--;
       if (food.count === 0) {
-        state.cartFoods.splice(state.cartFoods.indexOf(food),1);
+        state.cartFoods.splice(state.cartFoods.indexOf(food), 1);
       }
     }
   },
-  [CLEAR_CART](state){
+  [CLEAR_CART](state) {
     // 清除food中的count
-    state.cartFoods.forEach(food => {
-        food.count=0;
+    state.cartFoods.forEach((food) => {
+      food.count = 0;
     });
     // 移除购物车
     state.cartFoods = [];
-  }
+  },
+  [RECEIVE_SEARCH_SHOPS](state, { searchShops }) {
+    state.searchShops = searchShops;
+  },
 };

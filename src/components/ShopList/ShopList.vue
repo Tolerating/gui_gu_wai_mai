@@ -42,7 +42,7 @@
         </ul>
         <ul v-else>
           <li v-for="index in 6" :key="index">
-            <img src="./images/shop_back.svg" alt="back">
+            <img v-lazy="'./images/shop_back.svg'" alt="back">
           </li>
         </ul>
       </div>

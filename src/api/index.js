@@ -42,3 +42,4 @@ export const reqShopRatings = () => ajax(`${BASE_URL}/shop_ratings`);
 /* 获取商品数组 */
 export const reqShopGoods = () => ajax(`${BASE_URL}/shop_goods`);
 
+

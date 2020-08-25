@@ -18,3 +18,11 @@ npm i babel-plugin-component -D
 ```
 ### better-scroll
 移动端滚动插件
+
+## vue-lazyload
+图片懒加载
+
+## 轻量级日期格式化库 - date-fns
+
+## 打包文件分析 npmrunbuild--report
+ vue 脚手架提供了一个用于可视化分析打包文件的包 webpack-bundle-analyzer 和配置
